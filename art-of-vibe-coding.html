@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="The Art of Vibe Coding — How AI-assisted development is changing the way frontend engineers think, prototype, and ship features faster than ever." />
+  <meta name="author" content="Peter Ngmenkaa Bau-uno" />
+  <meta name="theme-color" content="#0a0e17" />
+  <title>The Art of Vibe Coding | Peter Ngmenkaa Bau-uno</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .article-header {
+      padding: 9rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .article-meta-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+    .article-title {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .article-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .article-container {
+      max-width: 760px;
+      margin: 0 auto 6rem;
+      padding: 0 1.5rem;
+    }
+    .article-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .article-content h2 {
+      font-size: 1.6rem;
+      color: var(--text-primary);
+      margin: 2.5rem 0 1rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    .article-content h2:first-child {
+      margin-top: 0;
+    }
+    .article-content p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .article-content ul, .article-content ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+    .article-callout {
+      background: rgba(34, 211, 238, 0.05);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--text-primary);
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      transition: transform var(--transition);
+    }
+    .back-nav:hover {
+      transform: translateX(-4px);
+    }
+    @media (max-width: 640px) {
+      .article-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-logo" aria-label="Home">
+        Peedev
+      </a>
+
+      <a href="index.html#blog" class="btn btn-outline" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+        ← Back to Portfolio
+      </a>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-overlay"></div>
+      <div class="glow-orb orb-1"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="article-meta-info">
+        <span>Jan 15, 2025</span>
+        <span>•</span>
+        <span>5 min read</span>
+        <span>•</span>
+        <span>Frontend & AI</span>
+      </div>
+      <h1 class="article-title">The Art of Vibe Coding</h1>
+      <p class="article-subtitle">
+        How AI-assisted development is changing the way frontend engineers think, prototype, and ship features faster than ever.
+      </p>
+    </div>
+  </header>
+
+  <!-- Article Body -->
+  <main class="article-container">
+    <a href="index.html#blog" class="back-nav">← Back to all posts</a>
+
+    <article class="article-content">
+      <h2>The Shift in How We Build</h2>
+      <p>
+        Building software has entered a transformative era. For years, frontend engineering was defined by syntax recall, scouring Stack Overflow, and wrestling with repetitive boilerplate before seeing any tangible visual feedback on screen.
+      </p>
+      <p>
+        "Vibe coding" represents a paradigm shift where natural thought, high-level intent, and iterative flow take center stage. By leveraging AI as a hyper-competent pair programmer, engineers can focus on architecture, user experience, aesthetics, and domain logic rather than low-level scaffolding.
+      </p>
+
+      <div class="article-callout">
+        "Vibe coding isn't about letting AI write unverified code; it is about staying in a flow state where ideas turn into working prototypes at the speed of thought."
+      </div>
+
+      <h2>Three Pillars of High-Impact Vibe Coding</h2>
+      
+      <ol>
+        <li>
+          <strong>Direction Over Dictation:</strong> The best results come from treating AI as a junior partner who excels at execution when provided clear context, constraints, and design tokens.
+        </li>
+        <li>
+          <strong>Rapid Feedback Loops:</strong> Instant prototyping means testing edge cases, responsiveness, and user flows in minutes rather than days, drastically reducing time-to-feedback.
+        </li>
+        <li>
+          <strong>Engineering Rigor & Verification:</strong> The "vibe" gets you to 80% with ease, but the remaining 20%—performance, accessibility, security, and clean code hygiene—requires deep engineering intuition.
+        </li>
+      </ol>
+
+      <h2>Real-World Impact on Small Projects</h2>
+      <p>
+        Whether developing the <strong>CHPS Management System</strong> for real healthcare workers or crafting automated report card workflows for local schools, AI-assisted development enables solo developers to deliver full-scale systems that traditionally required entire teams.
+      </p>
+
+      <h2>Looking Ahead</h2>
+      <p>
+        The future of frontend engineering belongs to those who combine strong foundational fundamentals with AI-accelerated workflows. It elevates the developer from a pure syntax typist to an end-to-end product architect.
+      </p>
+    </article>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="index.html#blog" class="btn btn-primary">Back to Portfolio</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="padding: 2.5rem 0; border-top: 1px solid var(--border); text-align: center;">
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+      &copy; <span id="currentYear"></span> Peter Ngmenkaa Bau-uno. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
